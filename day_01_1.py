@@ -1,4 +1,4 @@
-# 1. import file
+# 1. open input file
 
 inp = open("inputs/day_01.txt", "r")
 
@@ -26,6 +26,6 @@ total_distance = 0
 for i in range(0, len(list1)):
     total_distance += abs(list1[i] - list2[i])
 
-# 5. print solution
+# 5. output solution
 
 print(total_distance)

@@ -1,4 +1,4 @@
-# 1. import file
+# 1. open input file
 
 inp = open("inputs/day_01.txt", "r")
 
@@ -30,6 +30,6 @@ simularity = 0
 for num in hashmap:
     simularity += num * hashmap[num]
 
-# 4. print solution
+# 4. output solution
 
 print(simularity)
