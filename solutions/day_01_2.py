@@ -1,3 +1,9 @@
+'''
+Day 1 Part 2
+
+https://adventofcode.com/2024/day/1
+'''
+
 # 1. open input file
 from pathlib import Path
 
