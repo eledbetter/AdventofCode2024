@@ -1,6 +1,8 @@
 # 1. open input file
+from pathlib import Path
 
-inp = open("inputs/day_01.txt", "r")
+path = Path(__file__).resolve().parent.parent / 'inputs' / 'day_01.txt'
+inp = open(path)
 
 # 2. extract numbers from file, put into 2 lists
 #       - for each line:

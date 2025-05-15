@@ -27,8 +27,10 @@ def findUnsafeIndex(inpLs):
 
 
 # 1. open input file
+from pathlib import Path
 
-inp = open("inputs/day_02.txt", "r")
+path = Path(__file__).resolve().parent.parent / 'inputs' / 'day_02.txt'
+inp = open(path)
 
 # 2. loop thru each line
 #       - convert line to list of int
