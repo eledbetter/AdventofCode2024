@@ -6,16 +6,14 @@ inp = open(path)
 
 # 2. loop thru each line
 #       - convert line to list of int
-
 safeCount = 0
-
 for line in inp:
     ls = [int(x) for x in line.split()]
     
-    # 3. loop thru each list element from 1 to end
-    #       - check if difference is too great & if direction changes
-    #       - increment if abs(difference) < 4 & direction is same
-
+    # 3. loop thru each list element
+    #       - increment safeCount if all levels in list are safe:
+    #               - levels are either all increasing or all decreasing
+    #               - any two adjacent levels differ by at least one and at most three
     diff = 0
     isSafe = 1
     for i in range(1, len(ls)):

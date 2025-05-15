@@ -39,8 +39,7 @@ for line in inp:
     ls = [int(x) for x in line.split()]
 
     # 3. loop thru each list element
-    #       - check if difference is too great & if direction changes
-    #       - increment safeCount if safe:
+    #       - increment safeCount if all levels in list are safe:
     #               - levels are either all increasing or all decreasing
     #               - any two adjacent levels differ by at least one and at most three
     #               - if removing 1 level makes list safe, then it is counted as safe
